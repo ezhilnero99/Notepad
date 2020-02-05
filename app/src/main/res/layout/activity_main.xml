@@ -9,8 +9,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
+        android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/menuIV"
@@ -18,24 +17,32 @@
             android:layout_height="@dimen/_40sdp"
             android:padding="@dimen/_15sdp"
             android:src="@drawable/menu" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="App Name"
-            android:textSize="@dimen/_15sdp"
+            android:layout_centerVertical="true"
             android:layout_toRightOf="@id/menuIV"
             android:fontFamily="@font/thin_block"
-            android:layout_centerVertical="true"/>
+            android:text="App Name"
+            android:textSize="@dimen/_15sdp" />
 
         <ImageView
             android:id="@+id/sortingIV"
             android:layout_width="@dimen/_40sdp"
             android:layout_height="@dimen/_40sdp"
-            android:padding="@dimen/_15sdp"
             android:layout_alignParentRight="true"
+            android:padding="@dimen/_15sdp"
             android:src="@drawable/menu" />
 
 
     </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 </LinearLayout>
